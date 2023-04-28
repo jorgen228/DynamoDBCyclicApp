@@ -4,7 +4,6 @@ const CyclicDB = require("@cyclic.sh/dynamodb");
 const db = CyclicDB(process.env.CYCLIC_DB);
 let users = db.collection("users");
 
-
 router.get("/", async (req, res, next) => {
   let list = await users.list();
   res.send(list);
