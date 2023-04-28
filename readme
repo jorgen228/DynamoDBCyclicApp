@@ -1,0 +1,6 @@
+DynamoDB operations:
+
+collection.list() – Gets all results from the collection; only the keys of each record, without details.
+collection.get(key) – Gets the details of the item.
+collection.set(key, propertiesObject) – Adds/updates the record of the selected key.
+collection.delete(key) – Deletes the record of the selected key.
